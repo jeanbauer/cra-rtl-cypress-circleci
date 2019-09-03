@@ -1,6 +1,8 @@
 # Create React App + React Testing Library + Cypress with Circle CI
 > This is a repo that demonstrates the minimal setup to have a up and running application with continuous integration using Circle CI with unit, integration and e2e tests.
 
+[🇧🇷 Portuguese version](./README-ptbr.md)
+
 <p align="center">
   <img alt="Should not be that hard to setup a continuous integration project with Create React App, React Testing Library , Cypress with Circle CI" src="./cover.png">
 </p>
@@ -22,7 +24,7 @@ Create a file called ./src/setupTests.js:
 import '@testing-library/jest-dom/extend-expect'
 ```
 
-Go ahead and write your first test:
+Go ahead and write your first test: _./src/app.spec.js_
 ```js
 import React from 'react'
 import { render } from '@testing-library/react'
@@ -48,7 +50,7 @@ First add Cypress to your project: `yarn add cypress -D`
 Now create the initial cypress folder structure:
 Create a folder called _cypress_ and another one called _integration_ inside of it.
 
-Then, create your fist e2e test:
+Then, create your fist e2e test: _./cypress/integration/app.spec.js_
 ```javascript
 describe('App', () => {
   it('check if app is rendering a welcome message', () => {
